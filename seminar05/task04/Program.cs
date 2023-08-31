@@ -7,7 +7,7 @@ void FillArray(int[] array)
     }
 }
 FillArray(array);;
-int[] array2 = new int[80];
+int[] array2 = new int[81];
 void FillArray2(int[] array2)
 {
     int a = 10;
