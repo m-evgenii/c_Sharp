@@ -14,11 +14,12 @@ void FillArray(int[,] array)
 }
 FillArray(array);
 int[,] array2 = new int[3, 4];
+int res = 0;
 void ChangeArray(int[,] array){
-    for(int i2 = array.GetLength(1); i2 > 0; i2 --){
-        for (int i = 0; i < array2.GetLength(1); i ++){
-        array2[0, i] = array[array.GetLength(0), i2];
-        }
+    for (int i = 0; i < array2.GetLength(1); i ++){
+        res = array[array.GetLength(0) - 1, i];
+        array2[0, i] = res;
+    
     }
 }
 ChangeArray(array);
@@ -41,3 +42,4 @@ Vivod(array2);
 //        array[0, i] = array[array.GetLength(0) - 1, i];
 //        array[array.GetLength(0) - 1, i] = res;
 //}
+//for(int i2 = array.GetLength(1); i2 > 0; i2 --){
